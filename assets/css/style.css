@@ -548,13 +548,22 @@ main {
 
 .service-item-title { margin-bottom: 7px; }
 
-.service-item-text {
+.service-item-text,
+.fact-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
 
+.inline-line {
+  display: inline-block;  /* Allows it to sit inline */
+  width: 275px;          /* Set width of the line */
+  height: 2px;           /* Set height of the line */
+  background-color: white; /* Set color of the line */
+  vertical-align: middle; /* Aligns it in the middle of the line */
+  margin-top: 5px;       /* Optional: space above the line */
+}
 
 /**
  * #testimonials 

@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const randomFactElements = document.querySelectorAll(".random-fact");
+  
+  randomFactElements.forEach(factElement => {
+      // Get a random fact
+      const randomIndex = Math.floor(Math.random() * randomFacts.length);
+      const randomFact = randomFacts[randomIndex];
+      
+      // Set the text content of the span to the random fact
+      factElement.textContent = randomFact;
+  });
+});
